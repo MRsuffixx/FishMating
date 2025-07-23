@@ -1,39 +1,128 @@
-🌟 Overview: FishMating by mrsuffix 🌟
+# 🐠 FishMating Plugin
+> Bring your underwater world to life by letting fish breed naturally when players throw seeds into water! 🌊✨
 
-Welcome to FishMating, a feature-rich and immersive Minecraft plugin crafted for version 1.21.3+ and beyond! 🛠️✨ Written with care using the latest Bukkit/Paper APIs, this plugin transforms your oceans, rivers, and lakes into living, breathing ecosystems where fish can breed dynamically — just like land animals, but with a unique aquatic twist! 🐟❤️🌾
+![FishMating Logo](./logo.png)
 
-With FishMating, your players can interact with marine life in a whole new way: by simply tossing specific seeds into the water, they’ll attract nearby fish of matching types. Curious salmon, cod, pufferfish, and tropical fish will detect the seeds within a 5-block radius 🌱➡️🐠 and gracefully swim toward them. Upon reaching the seeds, each fish takes one seed and becomes breeding-ready, shown with charming heart particles ❤️✨. If two breeding-ready fish find each other within 30 seconds, they pair up just like in vanilla Minecraft animal breeding, spawning an adorable baby fish to join the aquatic family! 🐣🌊
+---
 
-But that’s just the start! 🧰 The plugin is deeply customizable thanks to the powerful config.yml:
+## 📦 Overview
 
-⚙️ Fully adjustable settings:
+**FishMating** is a feature-rich and highly configurable Minecraft plugin designed for **1.21.3+**. Crafted with ❤️ by `mrsuffix`, this plugin brings your aquatic biomes to life by introducing a unique, seed-based fish breeding mechanic.
 
-    Change detection radius 🧭
+Throw seeds into water to attract nearby fish! Fish will detect matching seeds within a **5-block radius**, swim toward them, and become *breeding-ready* after consuming a seed. If two ready fish find each other within **30 seconds**, they breed and spawn a cute baby fish 🐣. After breeding, fish wait **3 minutes** before breeding again.
 
-    Customize breeding cooldowns and readiness time ⏱️
+Every detail can be customized in the `config.yml` — from detection radius to particles, cooldowns, and seed mappings! ⚙️
 
-    Enable or disable particle effects and control their amount 🎇
+---
 
-    Define which seeds attract which fish types 🌱🐟
+## ✨ Features
 
-    Fine-tune advanced settings like natural growth, debug logging, and maximum tracked fish limits 🐠📊
+✅ Works with Minecraft **1.21.3+**  
+✅ Attract fish by throwing seeds into water 🌱  
+✅ Fully configurable detection radius, cooldowns, particles, and more  
+✅ Heart particles show breeding readiness ❤️  
+✅ Supports four fish types by default:  
+- Salmon 🐟 ← *Wheat Seeds* 🌾  
+- Cod 🐠 ← *Pumpkin Seeds* 🎃  
+- Pufferfish 🐡 ← *Melon Seeds* 🍉  
+- Tropical Fish 🐠 ← *Beetroot Seeds* 🥬  
 
-Everything is built with performance and stability in mind. FishMating handles edge cases gracefully — from fish dying mid-breeding, seeds despawning, or large-scale aquatic events — all while keeping your server console clean and error-free ✅. Thanks to the breeding-success-rate setting, you can even add a touch of unpredictability to make breeding feel natural and dynamic. 🎲✨
+✅ Advanced controls: debug logging, max tracked fish, breeding success chance  
+✅ Clean, modern multi-class code structure and JavaDocs 🛠️  
+✅ Compatible with other popular plugins  
+✅ Graceful handling of edge cases to keep your console error-free 🚀
 
-💻 Key features:
+---
 
-    ✅ Supports Minecraft 1.21.3+ using the newest Bukkit/Paper APIs
+## ⚙️ Configuration
 
-    🌱 Attract fish with seeds: salmon with wheat seeds, cod with pumpkin seeds, pufferfish with melon seeds, tropical fish with beetroot seeds
+Here’s an example `config.yml` with full customization options:
 
-    ❤️ Heart particles show breeding readiness, creating an immersive visual experience
+```yaml
+# FishMating Plugin Configuration
+# Author: mrsuffix
+# Version: 1.0.0
 
-    🐣 Baby fish spawn naturally after successful breeding
+settings:
+  detection-radius: 5.0
+  breeding-timeout-seconds: 300
+  breeding-cooldown-minutes: 3
+  enable-particles: true
+  particle-count: 5
 
-    📦 Everything is configurable: detection radius, timeouts, particles, and more!
+fish-mappings:
+  salmon: wheat_seeds
+  cod: pumpkin_seeds
+  pufferfish: melon_seeds
+  tropical_fish: beetroot_seeds
 
-    🧪 Advanced debug logging and tracking controls for large servers
+advanced:
+  debug-logging: false
+  max-tracked-fish: 1000
+  natural-growth: true
+  breeding-success-rate: 1.0
+````
 
-    📜 Clear JavaDocs, structured multi-class design, and clean plugin.yml/config.yml for maintainability
+Everything from detection range to particle effects and breeding logic can be tweaked! 🎛️
 
-Whether you’re running a survival server, roleplay world, or custom adventure map, FishMating makes your aquatic biomes feel alive, dynamic, and magical 🌊✨. Bring more depth and fun to your oceans, reward players for creative interaction, and watch your underwater world flourish like never before! 🐠💙🌱
+---
+
+## 🛠 Installation
+
+1️⃣ Download the latest **FishMating.jar** from the [Releases](https://github.com/YourUsername/FishMating/releases) tab.
+2️⃣ Place it in your server's `/plugins` folder.
+3️⃣ Restart or reload your server.
+4️⃣ Edit the `config.yml` to fit your server’s style!
+5️⃣ Enjoy dynamic underwater life! 🌊🐟
+
+---
+
+## 📂 Project Structure
+
+```
+FishMating/
+├── src/
+│   ├── main/java/com/mrsuffix/fishmating/
+│   │   ├── FishMating.java          # Main plugin class
+│   │   ├── listeners/               # Event listeners
+│   │   ├── managers/                # Logic and tracking
+│   │   └── utils/                   # Helper classes
+├── resources/
+│   ├── plugin.yml
+│   └── config.yml
+└── README.md
+```
+
+Well-documented and clean to help new developers understand and contribute! 🧰
+
+---
+
+## 📜 License
+
+This plugin is open-source under the **MIT License**.
+Feel free to use, modify, and share! 🤝
+
+---
+
+## ✏️ Author
+
+Developed with ❤️ by **mrsuffix**
+
+> GitHub: [mrsuffix](https://github.com/mrsuffixx)
+
+---
+
+## ⭐ Support the Project!
+
+If you enjoy **FishMating**, leave a ⭐ on the repository!
+Your support helps keep the project alive and encourages new updates! 🚀✨
+
+---
+
+## 🌊 Bring life to your oceans!
+
+FishMating makes your aquatic world dynamic, fun, and interactive.
+Perfect for survival servers, creative builds, and roleplay worlds alike.
+Make your underwater biomes feel truly alive! 🐟❤️🌱
+
+```
