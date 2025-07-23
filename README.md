@@ -124,5 +124,3 @@ Your support helps keep the project alive and encourages new updates! 🚀✨
 FishMating makes your aquatic world dynamic, fun, and interactive.
 Perfect for survival servers, creative builds, and roleplay worlds alike.
 Make your underwater biomes feel truly alive! 🐟❤️🌱
-
-```
