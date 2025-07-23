@@ -1,0 +1,14 @@
+name: FishMating
+version: 1.0.0
+main: com.mrsuffix.fishmating.FishMatingPlugin
+author: mrsuffix
+description: A plugin that simulates fish breeding triggered by throwing seeds into water
+api-version: 1.21
+website: https://github.com/mrsuffix/fishmating
+
+softdepend: []
+
+permissions:
+  fishmating.admin:
+    description: Administrative permissions for FishMating
+    default: op

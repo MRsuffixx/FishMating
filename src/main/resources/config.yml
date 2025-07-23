@@ -1,0 +1,42 @@
+# FishMating Plugin Configuration
+# Author: mrsuffix
+# Version: 1.0.0
+
+# General Settings
+settings:
+  # Radius in blocks for fish to detect seeds and other fish
+  detection-radius: 5.0
+
+  # Time in seconds before breeding readiness expires
+  breeding-timeout-seconds: 30
+
+  # Time in minutes fish must wait between breeding attempts
+  breeding-cooldown-minutes: 3
+
+  # Whether to show particle effects
+  enable-particles: true
+
+  # Number of particles to show for effects
+  particle-count: 5
+
+# Fish to Seed Mappings
+# Format: fish_type: seed_material
+fish-mappings:
+  salmon: wheat_seeds
+  cod: pumpkin_seeds
+  pufferfish: melon_seeds
+  tropical_fish: beetroot_seeds
+
+# Advanced Settings (for future expansion)
+advanced:
+  # Whether to log debug information
+  debug-logging: false
+
+  # Maximum number of fish that can be tracked simultaneously
+  max-tracked-fish: 1000
+
+  # Whether baby fish should grow up naturally
+  natural-growth: true
+
+  # Chance for successful breeding (0.0 to 1.0)
+  breeding-success-rate: 1.0

@@ -1,0 +1,10 @@
+com\mrsuffix\fishmating\managers\ConfigManager.class
+com\mrsuffix\fishmating\managers\FishManager.class
+com\mrsuffix\fishmating\models\BreedingPair.class
+com\mrsuffix\fishmating\models\FishData.class
+com\mrsuffix\fishmating\listeners\EntityListener.class
+com\mrsuffix\fishmating\managers\BreedingManager.class
+com\mrsuffix\fishmating\utils\ParticleUtils.class
+com\mrsuffix\fishmating\listeners\ItemDropListener.class
+com\mrsuffix\fishmating\FishMatingPlugin.class
+org\mrsuffix\Main.class
