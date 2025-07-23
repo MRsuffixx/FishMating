@@ -1,7 +1,7 @@
 # 🐠 FishMating Plugin
 > Bring your underwater world to life by letting fish breed naturally when players throw seeds into water! 🌊✨
 
-![FishMating Logo](./logo.png)
+![FishMating Logo](./logo256x256.png)
 
 ---
 
